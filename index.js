@@ -21,7 +21,8 @@ app.use(
 );
 
 app.use(express.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+// app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);
