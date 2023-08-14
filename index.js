@@ -1,5 +1,5 @@
 const express = require("express");
-const bodyParser = require("body-parser");
+// const bodyParser = require("body-parser");
 const sqlite3 = require("sqlite3").verbose();
 const cors = require("cors");
 require("dotenv").config();
@@ -22,7 +22,7 @@ app.use(
 
 app.use(express.json());
 // app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
+// app.use(bodyParser.json());
 
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);
